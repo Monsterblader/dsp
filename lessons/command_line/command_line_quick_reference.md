@@ -334,7 +334,7 @@ Tar or untar (archive or unarchive) a batch of files.
 
 
 ##### `zcat`
-Peak into gzipped files without unzipping them.
+Peek into gzipped files without unzipping them.
 
 ##### `echo`
 Print a string to standard output (console by default).

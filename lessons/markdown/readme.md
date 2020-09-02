@@ -28,7 +28,7 @@ Markdown is a simple way to add formatting — like headers, bold/italic text, a
 [2)  Text Formatting](#section-b)  
 [3)  Referencing Other Markdown Files](#section-c)  
 [4)  Horizontal Rules](#section-d)  
-[5)  Emoji's](#section-e)  
+[5)  Emojis](#section-e)  
 [6)  Links](#section-f)  
 [7)  Block Code, Language-specific](#section-g)  
 [8)  Tables](#section-h)  
@@ -83,15 +83,15 @@ Rule #3
 ___
 
 
-## <a name="section-e"></a>5) Emoji's 
+## <a name="section-e"></a>5) Emojis 
 
-Code for emoji's:
+Code for emojis:
 ```
 :fireworks:
 :smiley:
 :watermelon:
 ```
-Rendered emoji's:  
+Rendered emojis:  
 :fireworks:  
 :smiley:  
 :watermelon:  
