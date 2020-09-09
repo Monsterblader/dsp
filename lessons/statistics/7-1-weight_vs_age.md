@@ -32,14 +32,14 @@ indices = np.digitize(live.agepreg, bins)
 groups = live.groupby(indices)
 
 mean_age = [group.agepreg.mean() for i, group in groups]
-wgt_cdf = [cdf(list(group.totalwgt_lb)) for i, group in groups]
-wgt_percentiles = [[i(25), i(50), i(75)] for i in wgt_cdf]
+wgt_cdf = [cdf(sorted(group.totalwgt_lb)) for i, group in groups]
+wgt_percentiles = [[i(75), i(50), i(25)] for i in wgt_cdf]
 
 plt.plot(mean_age, wgt_percentiles)
 plt.title("25th, 50th, and 75th percentiles of baby's weights vs. mom's ages")
 plt.xlabel("Mom's age")
 plt.ylabel("Baby's weight percentiles")
-plt.legend(["25th percentile", "50th percentile", "75th percentile"])
+plt.legend(["75th percentile", "50th percentile", "25th percentile"])
 ```
 
 <matplotlib.legend.Legend at 0x7fdeaa247400>
